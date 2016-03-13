@@ -1,0 +1,45 @@
+body{
+	padding: 10px;
+}
+form{
+	border: 1px dashed blue;
+	width: 750px;
+	margin: 0 auto;
+	padding: 15px;
+}
+#testlabel{
+	width: 750px;
+	font-size: 25px;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	padding: 10px;
+	margin: 0 auto;
+}
+label{
+	display: block;
+	margin-bottom: 10px;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 17px;
+}
+input, 
+select{
+	margin-bottom: 15px;
+}
+
+
+button{
+	display: block;
+	margin-top: 15px;
+}
+.result{
+	padding: 15px;
+	color: blue;
+	font-size: 20px;
+}
+.result span{
+	color: red;
+	font-weight: bold;
+	font-size: 27px;
+}
