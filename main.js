@@ -6,8 +6,6 @@ var arrItems = [];
 var myAnswers = [];
 
 function createForm(){
-	
-
 	data.forEach(function(item, i, arr){
 		var 
 			question = item.question,
@@ -17,10 +15,6 @@ function createForm(){
 			var arrTasks = [];
 
 			rightAnswer.push(item.rightAnswer[0]);
-
-
-
-				
 
 				for(var j = 0; j < values.length; j++){
 					var el = document.createElement('input');
@@ -37,12 +31,7 @@ function createForm(){
 					var text = document.createTextNode(values[j]);
 					var br = document.createElement('br');
 					arrTasks.push(text,el,br);
-					
-
 				}
-
-				
-
 
 			arrItems.push(arrTasks);
 		})
@@ -58,28 +47,9 @@ createForm();
 
 var check = document.getElementById('check');
 
-
-/*form.onclick = function(e){
-
-	if(e.target.nodeName != 'BUTTON') return;
-
-	
-
-};*/
-
-
 form.onsubmit = function(){
 	return false;
 }
-
-/*form.onchange = function(){
-	var elems = document.myform.elements;
-
-	for(var i = 0; elems.length; i++){
-		elems[i].style.borderColor = "";
-
-	};
-}*/
 
 var index = 0;
 var endOfTest = false;
